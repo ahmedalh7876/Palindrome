@@ -29,7 +29,7 @@ public class Palindrome {
                 backwards += input.charAt(input.length() - i);
             }
             //Condition statement that tells user if the word is a palindrome or not.
-            if (backwards.equals(input)) {
+            if (backwards.equalsIgnoreCase(input)) {
                 System.out.println(backwards + " is a palindrome of " + input);
             } else {
                 System.out.println(backwards + " is not a palindrome of " + input);
